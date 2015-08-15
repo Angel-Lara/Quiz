@@ -1,10 +1,5 @@
-
-				<form action="answer" method="GET" role="form">
-					<legend>Pregunta: <%= question %></legend>
-				
-					<div class="form-group">
-						<input type="text" class="form-control" name="answer" placeholder="reponde aquí" required>
-					</div>
-				
-					<button type="submit" class="btn btn-primary">Enviar</button>
-				</form>
+        <form method="get" action="/quizes/answer">
+            <h5>Pregunta: </h5> <%= pregunta %> <p>
+            <input type="text" name="respuesta" value="Responda aquí"/>
+            <input type="submit" value="Enviar">
+        </form>
